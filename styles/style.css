@@ -1,4 +1,4 @@
-* {
+/* {
   box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: #000000;
 }
 
 article {
@@ -26,7 +26,8 @@ article {
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(128,128,128);
-  background: linear-gradient(90deg, white 30%, grey 100%);
+  background: linear-gradient(90
+deg, white 30%, grey 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -59,7 +60,7 @@ button {
 }
 button:focus {
   outline: none;
-  background: #202592;
+  background: bla;
 }
 button:focus svg {
   stroke: rgba(0,239,255,1);
@@ -82,9 +83,9 @@ img {
   top: 2rem;
   width: 10em;
   height: auto;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0 0 2px 2px rgba(195, 146, 146, 0.2);
   transition: .25s .15s;
 }
 
@@ -144,7 +145,6 @@ article > p {
   background: rgba(255,255,255, 0.5);
 }
 
-/* expand content */
 body.expand {
   font-size: 1.15em;
 }
@@ -171,3 +171,108 @@ body.expand dd {
 body.expand img {
   width: 15em;
 }
+ */
+ 
+ * {
+  box-sizing: border-box; 
+
+ }
+
+section {
+display: grid;
+place-content: center;
+min-height: 100vh;
+background-color: #ededed;
+ }
+
+.business {
+background-color: darkgrey;
+color: white;
+width: 640px;
+height: 360px;
+display: grid;
+grid-template-rows: 1fr 0px;
+box-shadow: 0 80px 48px -48px #10101045
+}
+
+.business:hover {
+  grid-template-rows: 1fr 96px;
+}
+
+.business .information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight:   700;
+  
+}
+
+.business .information span {
+  opacity: 0.4;
+}
+
+.business .information span.active {
+  opacity: 1;
+}
+
+.business .list {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  flex-direction: row;
+  border-top: 2px solid #fff6;
+  transform: scaleY(0);
+}
+
+.business:hover .list {
+ transform: scaleY(1);
+}
+
+.business .list button {
+  border: none;
+  background-color: transparent;
+  margin-inline:  0.25rem;
+  color: white;
+  height: 90px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.business .list button.active
+.business .list button:hover {
+  opacity: 1;
+}
+
+.business .list button ion-icon {
+   font-size: 1.5rem;
+}
+
+.business .list button label {
+  font-size: 0rem; 
+  font-weight: 600;
+}
+
+.business .list button.active label {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+img {
+  position: center;
+  top: 1rem;
+  width: 5em;
+  height: auto;
+  border: 3px solid #fff;
+  border-radius: 5em;
+  box-shadow: 0 0 2px 2px rgba(195, 146, 146, 0.2);
+  transition: .25s .15s;
+} 
+  
