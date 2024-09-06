@@ -185,7 +185,13 @@ min-height: 100vh;
 background-color: #ededed;
  }
 
+
 .business {
+background: rgb(255, 255, 255);
+background: linear-gradient(90deg, white 5%, grey 100%);
+box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
+transition: .5s;
+border-radius: 0.5rem;
 background-color: darkgrey;
 color: white;
 width: 640px;
@@ -193,7 +199,7 @@ height: 360px;
 display: grid;
 grid-template-rows: 1fr 0px;
 box-shadow: 0 80px 48px -48px #10101045
-}
+} 
 
 .business:hover {
   grid-template-rows: 1fr 96px;
@@ -268,10 +274,10 @@ box-shadow: 0 80px 48px -48px #10101045
 img {
   position: center;
   top: 1rem;
-  width: 5em;
+  width: 6em;
   height: auto;
-  border: 3px solid #fff;
-  border-radius: 5em;
+  border: 2px solid #fff;
+  border-radius: 2.5em;
   box-shadow: 0 0 2px 2px rgba(195, 146, 146, 0.2);
   transition: .25s .15s;
 } 

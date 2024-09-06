@@ -1,9 +1,3 @@
-//const expandButton = document.querySelector('header button') //dit is de knop om het te vergroten
-//expandButton.addEventListener('click', expand)    //dit vergroot het visite kaartje
-
-//function expand () {
-  //document.querySelector("p").textContent = 'oude student fdnd'  //dit is de functie dat als je erop drukt dat het vergoot 
-
 let btn = document.querySelectorAll("button");
 let detail = document.querySelectorAll("span");
 
