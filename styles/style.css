@@ -26,6 +26,7 @@ grid-template-rows: 1fr 0px;
 box-shadow: 0 80px 48px -48px #10101045
 } 
 
+
 .business:hover {
   grid-template-rows: 1fr 96px;
 }
